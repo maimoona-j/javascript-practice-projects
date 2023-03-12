@@ -1,0 +1,66 @@
+ body{
+    margin: 0px;
+    background-color: rgb(231, 66, 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: cursive;
+     
+    
+ }
+
+ .form{
+   
+    background-color: rgb(246, 249, 252);
+    margin:  10px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(24, 4, 14);
+     
+
+}
+
+.score{
+    text-align: right;
+    color: rgb(180, 23, 106);
+
+}
+
+.input{
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 3px solid rgb(195, 39, 146);
+    color: rgb(161, 22, 103);
+    text-align: center;
+    padding: 10px;
+
+}
+
+input::placeholder{
+    color: rgb(177, 172, 172);
+    font-family: cursive;
+    
+}
+
+.btn{
+    
+    background-color: rgb(190, 51, 120);
+    margin: 20px 0;
+    color: white;
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px black;
+    cursor: pointer;
+}
+
+.btn:hover{
+   filter: brightness();
+}

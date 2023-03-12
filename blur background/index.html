@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blue background pop-up menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Main container which will lead you to pop-up menu -->
+    <div class="container ">
+        <h1>Get 25% discount on each booking</h1>
+        <button class="btn">Book Now</button>
+    </div>
+
+    <!-- pop-up container which will be active using javascript -->
+    <div class="popup-container active">
+        <h3>Verify your information to get offer</h3>
+
+        <!-- you can add any data you want to add for practice purposes -->
+        <label for="email">Enter your email</label>
+        <input type="email" class="input" placeholder="Enter your email">
+        <label for="email">select your flight</label>
+         <select class="place" name="place" >
+            <option value="0" selected>place </option>
+            <option value="1">Turkey </option>
+            <option value="2" >Dubai</option>
+            <option value=" 3">PAKISTAN</option>
+            <option value=" 4">China </option>
+            <option value=" 5" >Japan </option>
+            <option value="6">Korea </option>
+        </select>
+        <button class="popup-btn">Next</button>
+        <i class="fa-solid fa-circle-xmark fa-2x close-icon"></i>
+    </div>
+      <!-- link to javascript file -->
+    <script src="index.js"></script>
+</body>
+</html>
