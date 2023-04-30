@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+}
+
+/* styling of class container */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("https://media.istockphoto.com/id/1413299539/photo/male-tourist-looking-at-arrival-and-departure-board-at-kuala-lumpur-international-airport.jpg?b=1&s=170667a&w=0&k=20&c=LtPtXgezKAfkqdefdEU-XXcvxo-p_DVxs_jJ7vTas7M=");
+    background-size: cover;
+}
+
+h1{
+    color: rgb(36, 19, 143);
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    white-space: nowrap;
+    text-shadow: 3px 4px 5px rgb(241, 119, 31);
+}
+
+.btn{
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    font-size: large;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(39, 25, 165) ;
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgb(11, 6, 16);
+    color: rgb(233, 231, 237);
+    filter: brightness(0.8);
+}
+
+.active.container{
+    filter: blur(5px) brightness(.7);
+}
+
+/* styling of class popup-container */
+
+.popup-container{
+    background-color: white;
+    position: fixed;
+    border: 3px solid rgb(2, 2, 13);
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    top: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    text-decoration: solid;
+    background: url("https://images.pexels.com/photos/5227440/pexels-photo-5227440.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.popup-btn{
+    margin: 15px;
+     
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+}
+
+h3{
+    color: blueviolet;
+}
+
+label{
+    margin: 10px;
+    text-align: center;
+    color: blueviolet;
+}
+
+.input::placeholder{
+    text-align: center;
+    color: rgb(117, 113, 113);
+    padding: 10px;
+}
+
+.place{
+    text-align: center;
+    color: rgb(109, 106, 106);
+    padding: 5px;
+}
+.close-icon{
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+   
+}
+
+.close-icon:hover{
+    color: blueviolet;
+}
+
+.active.popup-container{
+    visibility: hidden;
+}
+
+ 
+
