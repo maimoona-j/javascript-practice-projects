@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: sans-serif;
+  background: linear-gradient(
+    135deg,
+    rgb(0, 87, 128) 20%,
+    rgb(120, 7, 149) 80%
+  );
+}
+
+.menu {
+  background: rgb(116, 12, 66);
+  width: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.menu .fas {
+  transition: transform 0.2s;
+}
+
+.menu p {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.social-lists {
+  background: rgb(87, 153, 239);
+  width: 300px;
+  padding: 10px;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+.social-lists li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: padding 0.2s linear;
+}
+
+.social-lists li a {
+  text-decoration: none;
+}
+
+.social-lists li:hover {
+  background: darkgray;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+.social-lists li .fab {
+  margin: 0 10px;
+}
+
+.rotate .fas {
+  transform: rotate(180deg);
+}
+
+.hide {
+  visibility: hidden;
+}
