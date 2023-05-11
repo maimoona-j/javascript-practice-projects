@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>1K followers Special | With Circle Burst Animation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo">
+      <img src="logo.jpg" alt="" />
+      <h2>front.end24</h2>
+    </div>
+
+    <div class="text-container">
+      <h1>1K<br /><span>Followers</span></h1>
+      <div class="animated-text">
+        <h2>Thank you!</h2>
+        <h2>شکریہ</h2>
+        <h2>धन्यवाद</h2>
+        <h2>Teşekkürler!</h2>
+        <h2>obrigado!</h2>
+        <h2>Danke!</h2>
+        <h2>mulțumesc!</h2>
+      </div>
+    </div>
+    <div class="animation-container">
+      <div class="burst">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function createBurst() {
+        let animContainer = document.querySelector(".animation-container");
+        let burst = document.querySelector(".burst");
+
+        burst.style.top = Math.random() * 550 + "px";
+        burst.style.left = Math.random() * 750 + "px";
+
+        let burstClone = burst.cloneNode(true);
+        animContainer.appendChild(burstClone);
+
+        setTimeout(() => {
+          burstClone.remove();
+        }, 20000);
+      }
+      setInterval(createBurst, 2000);
+    </script>
+  </body>
+</html>
