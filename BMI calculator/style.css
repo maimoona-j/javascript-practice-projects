@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to left bottom, lightpink, rgb(101, 95, 227));
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  margin: 5px;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.input {
+  padding: 10px 20px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+}
+
+input::placeholder {
+  color: rgb(180, 172, 172);
+}
+
+#age {
+  width: 150px;
+}
+
+.btn {
+  background-color: lightpink;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px;
+  font-size: 20px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+}
