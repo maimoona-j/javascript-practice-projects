@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 25%;
+  height: 65vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #3897f0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+}
+
+a {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #3897f0;
+  text-decoration: none;
+}
+
+.option {
+  text-align: center;
+  margin: 5px;
+}
+
+#forgot-password-container h2 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#forgot-password-container p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#forgot-password-container {
+  display: none;
+  height: 65vh;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#forgot-password-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#forgot-password-container input[type="email"] {
+  margin-bottom: 20px;
+}
+
+#forgot-password-container button[type="submit"] {
+  margin-top: 0;
+}
+
+.facebook {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #3897f0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    max-width: 30%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .login-container {
+    max-width: 30%;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+  .facebook {
+    white-space: nowrap;
+  }
+}
