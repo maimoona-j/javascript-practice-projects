@@ -1,0 +1,122 @@
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.login {
+  max-width: 300px;
+  margin: 0 auto;
+  height: 60vh;
+  padding: 40px;
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  bottom: 20%;
+  left: 30%;
+  border: 2px solid black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login input[type="text"],
+.login input[type="email"],
+.login textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login textarea {
+  height: 100px;
+}
+
+.login input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+span {
+  display: block;
+}
+
+.canvas {
+  margin: 100px auto;
+  width: 30%;
+  text-align: center;
+  border: 2px solid rgb(19, 17, 17);
+  position: absolute;
+  top: 70%;
+  left: 35%;
+  box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.3),
+    0 -2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  width: 40px;
+  height: 40px;
+  border: solid black 2px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+#plum {
+  background: plum;
+}
+
+#white {
+  background: white;
+}
+
+#lightblue {
+  background: rgb(77, 173, 205);
+}
+
+#lightpink {
+  background: rgb(219, 134, 147);
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .login {
+    width: 80%;
+    left: 10%;
+  }
+
+  .canvas {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .login {
+    width: 90%;
+    left: 5%;
+  }
+
+  .canvas {
+    width: 90%;
+    left: 5%;
+  }
+}

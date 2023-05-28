@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color switcher</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="login">
+      <form action="#">
+        <h2>
+          Your Feedback
+          <i class="fa-solid fa-heart" style="color: rgb(207, 20, 20)"></i>
+        </h2>
+        <label for="name">Name:</label>
+        <input type="text" placeholder="Enter your name" />
+        <label for="name">Email:</label>
+        <input type="email" required placeholder="Enter your email" />
+        <label>Enter your message:</label>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input class="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div class="canvas">
+      <h4>Color Scheme Switcher</h4>
+      <span class="button" id="plum"></span>
+      <span class="button" id="white"></span>
+      <span class="button" id="lightblue"></span>
+      <span class="button" id="lightpink"></span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
