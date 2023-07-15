@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  background: #8e44ad;
+  color: #fff;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: #8e44ad;
+}
+.container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.container .box {
+  width: calc(33% - 10px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 5px;
+}
+
+.box .image img {
+  height: 120%;
+  width: 120%;
+  padding-right: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.box p {
+  text-align: justify;
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.box .name {
+  margin: 10px 0 3px 0;
+  color: #8e44ad;
+  font-size: 18px;
+  font-weight: 600;
+}
+.rating i {
+  font-size: 18px;
+  color: #8e44ad;
+
+  margin-bottom: 5px;
+}
+.btns {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.btns button {
+  background: #8e44ad;
+  width: 100%;
+  padding: 9px 0px;
+  outline: none;
+  border: 2px solid #8e44ad;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 400;
+  color: #8e44ad;
+  transition: all 0.3s linear;
+}
+.btns button:first-child {
+  background: none;
+  margin-right: 5px;
+}
+.btns button:last-child {
+  color: #fff;
+  margin-left: 5px;
+}
+.btns button:first-child:hover {
+  background: #8e44ad;
+  color: #fff;
+}
+.btns button:hover {
+  color: #fff;
+}
+@media (max-width: 1045px) {
+  .container .box {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 710px) {
+  .container .box {
+    width: 100%;
+  }
+}
