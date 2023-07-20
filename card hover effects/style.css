@@ -1,0 +1,91 @@
+ 
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b300e9;
+  background-image: linear-gradient(160deg, #e100e9 0%, #80acd0 100%);
+}
+
+h1 {
+  position: absolute;
+  bottom: 80%;
+  color: white;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+ 
+.glassBox,
+.glassBox * {
+  box-sizing: border-box;
+  transition: 400ms;
+  margin: 10px;
+}
+
+.glassBox {
+  width: 100%;
+  height: 400px;
+  max-width: 300px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.glassBox__imgBox img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.glassBox__title {
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Lato";
+}
+
+.glassBox__content {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Lato";
+  letter-spacing: 0.1em;
+  opacity: 0;
+}
+
+.glassBox:hover .glassBox__imgBox {
+  transform: translateY(-50px);
+}
+
+.glassBox:hover .glassBox__imgBox img{
+  transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
+}
+ 
