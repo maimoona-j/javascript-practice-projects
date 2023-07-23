@@ -1,0 +1,109 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+body {
+  background: linear-gradient(to left, #9d6607, #482402);
+  font-family: sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+  width: 100%;
+  max-width: 400px;
+  background: rgb(241, 215, 183);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#container.closed header {
+  cursor: pointer;
+}
+header {
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  height: 250px;
+  background: center / cover;
+  background-image: url(https://cdn.pixabay.com/photo/2014/11/28/08/03/brownie-548591_640.jpg);
+}
+
+.title {
+  position: relative;
+  z-index: 1;
+  font-size: 2rem;
+  border-bottom: 2px solid rgba(125, 78, 8, 0.1);
+  padding: 20px;
+  margin-top: 0px;
+}
+
+#container.closed .title {
+  padding: 40px 20px 10px 20px;
+  margin-top: -87px;
+  color: white;
+  border: none;
+}
+
+.title:before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(159, 118, 5, 0) 0%,
+    rgba(129, 83, 4, 0.65) 100%
+  );
+  opacity: 0;
+}
+
+#container.closed .title:before {
+  opacity: 1;
+}
+
+article {
+  padding: 25px 30px;
+  overflow: hidden;
+  max-height: 400px;
+}
+
+#container.closed article {
+  max-height: 0px;
+  padding: 0 30px;
+}
+
+.ingredients {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 20px;
+  padding-left: 4px;
+  font-size: 0.9rem;
+}
+
+.ingredients > li {
+  list-style-type: none;
+  display: flex;
+  margin: 4px 0px;
+}
+
+.ingredients > li > .amount {
+  width: 80px;
+  color: #1976d2;
+}
+
+.preperation > div {
+  margin-bottom: 10px;
+}
