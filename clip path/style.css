@@ -1,0 +1,53 @@
+body {
+  background: url("https://images.unsplash.com/photo-1508615070457-7baeba4003ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzM5MjZ8MHwxfHNlYXJjaHwyNnx8Z3JhZGllbnR8ZW58MHwwfHx8MTY4OTE3MTcwMnww&ixlib=rb-4.0.3&q=80&w=400");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin-left: 500px;
+  margin-top: 150px;
+}
+
+.card {
+  width: 400px;
+
+  background-color: white;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card p {
+  margin: 10px 0;
+}
+
+.card:hover .card-content {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  transition: transform 0.5s ease-in-out;
+  background-color: #909f90;
+  color: white;
+}
